@@ -42,18 +42,18 @@ setplot dc1
 
 The table below summarizes the observed drain current (\(I_D\)) behavior for different gate voltages (\(V_{GS}\)):
 
-| \(V_{GS}\) (V) | \(I_D\) vs \(V_{DS}\) Observation | Region of Operation |
+| Vgs (V) | Id vs Vds Observation | Region of Operation |
 |----------------|----------------------------------|------------------|
-| 0.6            | \(I_D\) increases almost linearly with \(V_{DS}\); no clear saturation. | Linear (Ohmic) region |
-| 0.8            | \(I_D\) increases linearly at first, then starts to saturate around \(V_{DS} \approx 0.4\text{V}\). | Transition region |
-| 1.0            | Higher \(I_D\); clear saturation beyond \(V_{DS} \approx 0.55\text{V}\). | Saturation region |
-| 1.2            | \(I_D\) increases further; saturation current significantly higher. | Saturation region |
-| 1.4            | \(I_D\) reaches maximum slope; channel fully inverted. | Deep saturation |
+| 0.6            | Id increases almost linearly with Vds; no clear saturation. | Linear (Ohmic) region |
+| 0.8            | Id increases linearly at first, then starts to saturate around Vds \approx 0.4V. | Transition region |
+| 1.0            | Higher Id; clear saturation beyond Vds approx 0.55V. | Saturation region |
+| 1.2            | Id increases further; saturation current significantly higher. | Saturation region |
+| 1.4            | Id reaches maximum slope; channel fully inverted. | Deep saturation |
 
 **Extracted Parameters:**
 
 | Parameter              | Symbol        | Value / Relation             | Observation |
 |------------------------|---------------|-----------------------------|-------------|
-| Threshold Voltage       | \(V_{th}\)    | ≈ 0.45 V                   | From Id–Vgs curve (model value) |
-| Saturation Voltage      | \(V_{DS,sat}\)| ≈ \(V_{GS} - V_{th}\)      | Marks transition from linear to saturation |
-| Channel Length Modulation | \(\lambda\)  | Small slope in saturation region | Indicates slight increase of \(I_D\) with \(V_{DS}\) |
+| Threshold Voltage       | Vth    | ≈ 0.45 V                   | From Id–Vgs curve (model value) |
+| Saturation Voltage      | Vds(sat)| ≈ Vgs-Vth      | Marks transition from linear to saturation |
+| Channel Length Modulation | lambda  | Small slope in saturation region | Indicates slight increase of \(I_D\) with \(V_{DS}\) |
