@@ -29,5 +29,35 @@ The threshold voltage is defined as the minimum gate-to-source voltage required 
 
 Initially, at small positive gate voltages, the holes are merely pushed away from the oxide interface and a depletion region (a region with no majority carriers) exists near the oxide interface. The threshold voltage is the gated voltage level when the gate voltage can push away a significant amount of holes and also attract enough electrons to the interface to make the surface behave as an n-type material.
 
+The image illustrates the body effect in an n-channel MOSFET by showing two scenarios with different source-to-bulk voltages ($V_{sb}$).
 
-The image illustrates the body effect in an n-channel MOSFET by showing two scenarios with different source-to-bulk voltages (\(V_{sb}\)).     .rPeykc.rWIipd{font-size:var(--m3t5);font-weight:500;line-height:var(--m3t6);margin:24px 0 10px 0;}.f5cPye .WaaZC:first-of-type .rPeykc.uP58nb:first-child{font-size:var(--m3t3);line-height:var(--m3t4);font-weight:400 !important;letter-spacing:normal;margin:0 0 10px 0}.rPeykc.uP58nb{font-size:var(--m3t5);font-weight:500;line-height:var(--m3t6);margin:20px 0 10px 0}.rPeykc.uP58nb.MNX06c{font-size:var(--m3t1);font-weight:normal;letter-spacing:normal;line-height:var(--m3t2);margin:10px 0 10px 0}.f5cPye ul{font-size:var(--m3t7);line-height:var(--m3t8);margin:10px 0 20px 0;padding-inline-start:24px}.f5cPye .WaaZC:first-of-type ul:first-child{margin-top:0}.f5cPye ul.qh1nvc{font-size:var(--m3t7);line-height:var(--m3t8)}.f5cPye li{padding-inline-start:4px;margin-bottom:8px;list-style:inherit}.f5cPye li.K3KsMc{list-style-type:none}.f5cPye ul>li:last-child,.f5cPye ol>li:last-child,.f5cPye ul>.bsmXxe:last-child>li,.f5cPye ol>.bsmXxe:last-child>li{margin-bottom:0}          \(V_{sb}=0\)               In this scenario, the source (S) and the bulk (B) are connected, meaning they are at the same potential.     The voltage between the source and bulk is zero (\(V_{sb}=0\)). The p-n junction between the source and the p-substrate is not reverse-biased. The threshold voltage (\(V_{th}\)) is at its minimum value for the device, as there is no body effect. The channel is formed by the electric field from the gate voltage, which attracts electrons from the source and drain regions to the surface of the p-substrate, creating an n-type channel.
+### Case 1: $V_{sb} = 0$
+In this scenario, the source (S) and the bulk (B) are connected, meaning they are at the same potential.  
+The voltage between the source and bulk is zero ($V_{sb} = 0$).  
+The p-n junction between the source and the p-substrate is not reverse-biased.  
+The threshold voltage ($V_{th}$) is at its minimum value for the device, as there is no body effect.  
+The channel is formed by the electric field from the gate voltage, which attracts electrons from the source and drain regions to the surface of the p-substrate, creating an n-type channel.
+
+### Case 2: $V_{sb} > 0$
+
+In this scenario, a positive voltage is applied between the source (S) and the bulk (B), meaning the source is at a higher potential than the bulk.  
+The voltage between the source and bulk is positive ($V_{sb} > 0$).  
+
+This positive voltage reverse-biases the p-n junction between the source and the p-substrate.  
+The reverse bias widens the depletion region under the channel, pushing the channel further away from the gate oxide.  
+
+To form the channel, a larger gate-to-source voltage ($V_{gs}$) is required to overcome the increased depletion region width.  
+This effect causes the threshold voltage ($V_{th}$) to increase.  
+
+This phenomenon is known as the **body effect** or **substrate-bias effect**.  
+
+The increase in threshold voltage is given by:
+
+$$
+V_{th} = V_{th0} + \gamma \left(\sqrt{2\phi_F + V_{SB}} - \sqrt{2\phi_F}\right)
+$$
+
+where:  
+- $V_{th0}$ is the threshold voltage for $V_{SB} = 0$  
+- $\gamma$ is the **body effect coefficient**  
+- $\phi_F$ is the **Fermi potential**
