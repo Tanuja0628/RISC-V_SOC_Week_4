@@ -36,7 +36,7 @@ setplot dc1
              Vin: 0V → 1.8V
 ## Observation
 - We observe that there is a minute current at Vgs=0.6V (cut off region)
-- There is no plot observed for Vgs=0.2V and 0.4V , because for the transister to be on, Vgs shd be atleast Vth=0.56V.
+- There is no plot observed for Vgs=0.2V and 0.4V , because for the transistor to be on, Vgs shd be atleast Vth=0.56V.
 
 ### Results
 
@@ -57,3 +57,6 @@ The table below summarizes the observed drain current (\(I_D\)) behavior for dif
 | Threshold Voltage       | Vth    | ≈ 0.45 V                   | From Id–Vgs curve (model value) |
 | Saturation Voltage      | Vds(sat)| ≈ Vgs-Vth      | Marks transition from linear to saturation |
 | Channel Length Modulation | lambda  | Small slope in saturation region | Indicates slight increase of \(I_D\) with \(V_{DS}\) |
+
+### Plot
+![Id-Vds Curve](plots/Id vs Vds.jpg)
