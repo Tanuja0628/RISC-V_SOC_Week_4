@@ -64,6 +64,7 @@ Voltage Transfer Characteristic (VTC)
 | Input High Voltage Vih | ≈ 0.993 V                   |
 | Noise Margin Low NML     | (Vil - Vol) ≈ 0.668 V |
 | Noise Margin High NMH   | (Voh - Vih) ≈ 0.738 V |
+
 Increasing PMOS width (from previous labs) improves the drive strength of PMOS, slightly increasing the low-to-high switching threshold and modifying noise margins.
 
 ## Observations
