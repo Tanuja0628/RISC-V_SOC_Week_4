@@ -58,9 +58,13 @@ setplot dc1
 The Id vs Vgs graph shows a linear behaviour aas expected in short channel.
 ## Simulation Setup
 Tool: Ngspice
+
 Technology: SkyWater 130nm PDK
+
 Device: NMOS (sky130_fd_pr__nfet_01v8)
+
 Device Dimensions: W = 0.39 µm, L = 0.15 µm
+
 Voltage Sweep:
 Vdd sweep: 0 → 1.8 V
 Vin sweep: 0 → 1.8 V
