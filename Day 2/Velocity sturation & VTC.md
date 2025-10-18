@@ -32,6 +32,8 @@ setplot dc1
 
 .end
 ```
+![Id-Vds Curve](plots/behav_id_vds.jpg)
+"From the above plot we infer that for lower values of Vgs the graph is showing a quadratinv behaviour, and for higher values of Vgs it shows a linear behaviour"
 ## Netlist – Experiment 2: Id–Vgs Characteristics
 ```spice
 XM1 Vdd n1 0 0 sky130_fd_pr__nfet_01v8 w=0.39 l=0.15
@@ -52,7 +54,9 @@ setplot dc1
 
 .end
 ```
-5. Simulation Setup
+![Id-Vgs Curve](plots/id_vgs.jpg)
+The Id vs Vgs graph shows a linear behaviour aas expected in short channel.
+## Simulation Setup
 Tool: Ngspice
 Technology: SkyWater 130nm PDK
 Device: NMOS (sky130_fd_pr__nfet_01v8)
@@ -64,7 +68,7 @@ Vin sweep: 0 → 1.8 V
 ## Results
 | Vgs (V) | Id Behavior vs Vds                            | Region of Operation |
 | ------- | --------------------------------------------- | ------------------- |
-| 0.6     | Linear increase of Id with Vds; no saturation | Linear region       |
+| 0.6     | Linear increase of Id with Vds; no saturation | Cut off region     |
 | 0.8     | Id starts saturating around Vds ≈ 0.4 V       | Transition region   |
 | 1.0     | Clear saturation beyond Vds ≈ 0.55 V          | Saturation region   |
 | 1.2     | Higher Id; saturation more prominent          | Saturation region   |
@@ -77,6 +81,8 @@ Vin sweep: 0 → 1.8 V
 | 0.5     | Id rises faster with Vgs                  | Transitioning to saturation           |
 | 1.0     | Id rises sharply beyond threshold voltage | Saturation region observed            |
 | 1.8     | Id reaches maximum; strong inversion      | Fully ON NMOS                         |
+
+![Id-Vgs Curve](plots/id_vgs_multiple_vds.jpg)
 
 ## Observations
 
