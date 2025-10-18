@@ -59,4 +59,4 @@ The table below summarizes the observed drain current (\(I_D\)) behavior for dif
 | Channel Length Modulation | lambda  | Small slope in saturation region | Indicates slight increase of \(I_D\) with \(V_{DS}\) |
 
 ### Plot
-![Id-Vds_Curve](plots/Id_vs_Vds.jpg)
+![Id-Vds_Curve](Day 1/Id_vs_Vds.jpg)
