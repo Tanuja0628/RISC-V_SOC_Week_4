@@ -32,7 +32,7 @@ run
 .end
 ```
 ![VTC Curve](plots/Transient_sim.jpg)
-
+From this graph , Rise delay is observed as 0.335ns and Fall delay is observed as 0.285ns
 ## Netlist – Experiment 2: DC Sweep for VTC
 ```spice
 XM1 out in vdd vdd sky130_fd_pr__pfet_01v8 w=0.84 l=0.15
