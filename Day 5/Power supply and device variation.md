@@ -34,6 +34,8 @@ display
 
 .end
 ```
+![Device_Var](plots/device_variation.jpg)
+As we see in the plot the switch threshold shifted towards right due to variation in device parameters, the switching threshold value for this case is 0.98V
 ## Netlist – Experiment 2: Power Supply Variation
 ```spice
 XM1 out in vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=0.15
@@ -61,7 +63,9 @@ plot dc1.out vs in dc2.out vs in dc3.out vs in dc4.out vs in dc5.out vs in dc6.o
 
 .end
 ```
-5. Simulation Setup
+![Power_supply](plots/supply.jpg)
+From the above output, we observe that the gain for the VTC of 1.8V is 7 and for VTCof 0.8V is 7.8 approximately.
+## Simulation Setup
 Tool: Ngspice
 Technology: SkyWater 130nm PDK
 Devices:
