@@ -67,12 +67,17 @@ plot dc1.out vs in dc2.out vs in dc3.out vs in dc4.out vs in dc5.out vs in dc6.o
 From the above output, we observe that the gain for the VTC of 1.8V is 7 and for VTCof 0.8V is 7.8 approximately.
 ## Simulation Setup
 Tool: Ngspice
+
 Technology: SkyWater 130nm PDK
+
 Devices:
 PMOS (sky130_fd_pr__pfet_01v8)
 NMOS (sky130_fd_pr__nfet_01v8)
+
 Supply Voltage (Vdd): 1.8 V, varied down in steps of 0.2 V
+
 Load Capacitance: 50 fF
+
 DC Sweep: Vin 0 → 1.8 V, step = 0.01 V
 
 ## Results
@@ -98,11 +103,11 @@ Observation: Lowering supply voltage shifts the inverter switching threshold lef
 
 ## Observations
 
-Increasing PMOS width strengthens the pull-up network, increasing Vm and steepening the VTC.Decreasing Vdd reduces the noise margins NML and NMH, making the inverter more sensitive to input noise.CMOS inverter robustness depends on device sizing and supply voltage, highlighting design trade-offs for low-power circuits.
+Increasing PMOS width strengthens the pull-up network, increasing Vm and steepening the VTC. Decreasing Vdd reduces the noise margins NML and NMH, making the inverter more sensitive to input noise.CMOS inverter robustness depends on device sizing and supply voltage, highlighting design trade-offs for low-power circuits.
 
 ## Discussion
 
-Device variation and supply voltage variation are critical factors in STA.Robust design requires careful PMOS/NMOS sizing to maintain symmetric switching and adequate noise margins.Understanding the impact of Vdd scaling is essential for low-power design and reliable digital circuit operation.
+Device variation and supply voltage variation are critical factors in STA. Robust design requires careful PMOS/NMOS sizing to maintain symmetric switching and adequate noise margins.Understanding the impact of Vdd scaling is essential for low-power design and reliable digital circuit operation.
 
 ## Conclusion
 
