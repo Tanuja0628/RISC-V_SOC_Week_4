@@ -44,7 +44,7 @@ The table below summarizes the observed drain current (\(I_D\)) behavior for dif
 
 | Vgs (V) | Id vs Vds Observation | Region of Operation |
 |----------------|----------------------------------|------------------|
-| 0.6            | Id increases almost linearly with Vds; no clear saturation. | Linear (Ohmic) region |
+| 0.6            | Id increases almost linearly with Vds; no clear saturation. | cut off region |
 | 0.8            | Id increases linearly at first, then starts to saturate around Vds \approx 0.4V. | Transition region |
 | 1.0            | Higher Id; clear saturation beyond Vds approx 0.55V. | Saturation region |
 | 1.2            | Id increases further; saturation current significantly higher. | Saturation region |
@@ -54,7 +54,7 @@ The table below summarizes the observed drain current (\(I_D\)) behavior for dif
 
 | Parameter              | Symbol        | Value / Relation             | Observation |
 |------------------------|---------------|-----------------------------|-------------|
-| Threshold Voltage       | Vth    | ≈ 0.45 V                   | From Id–Vgs curve (model value) |
+| Threshold Voltage       | Vth    | ≈ 0.55 V                   | From Id–Vgs curve (model value) |
 | Saturation Voltage      | Vds(sat)| ≈ Vgs-Vth      | Marks transition from linear to saturation |
 | Channel Length Modulation | lambda  | Small slope in saturation region | Indicates slight increase of \(I_D\) with \(V_{DS}\) |
 
