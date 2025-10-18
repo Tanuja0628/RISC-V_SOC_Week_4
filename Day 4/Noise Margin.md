@@ -34,6 +34,8 @@ display
 
 .end
 ```
+![Noise_margin](plots/noise_margin.jpg)
+From the above plot, we observe that NMH = 0.738V and NML = 0.668V
 ## Simulation Setup
 Tool: Ngspice
 Technology: SkyWater 130nm PDK
