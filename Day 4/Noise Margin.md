@@ -38,25 +38,32 @@ display
 From the above plot, we observe that NMH = 0.738V and NML = 0.668V
 ## Simulation Setup
 Tool: Ngspice
+
 Technology: SkyWater 130nm PDK
+
 Devices:
+
 PMOS (sky130_fd_pr__pfet_01v8), W = 1 µm, L = 0.15 µm
+
 NMOS (sky130_fd_pr__nfet_01v8), W = 0.36 µm, L = 0.15 µm
+
 Supply Voltage: Vdd = 1.8 V
+
 Load Capacitance: 50 fF
+
 DC Sweep: Vin from 0 → 1.8 V, step = 0.01 V
 
 ## Results
 Voltage Transfer Characteristic (VTC)
 | Parameter                   | Value / Observation        |
 | --------------------------- | -------------------------- |
-| Switching Threshold (V_m)   | ≈ 0.95 V                   |
-| High-Level Output (V_{OH})  | ≈ 1.8 V                    |
-| Low-Level Output (V_{OL})   | ≈ 0 V                      |
-| Input Low Voltage (V_{IL})  | ≈ 0.85 V                   |
-| Input High Voltage (V_{IH}) | ≈ 1.05 V                   |
-| Noise Margin Low (NM_L)     | (V_{IL} - V_{OL}) ≈ 0.85 V |
-| Noise Margin High (NM_H)    | (V_{OH} - V_{IH}) ≈ 0.75 V |
+| Switching Threshold (V_m)   | ≈ 0.85 V                   |
+| High-Level Output Voh  | ≈ 1.73 V                    |
+| Low-Level Output Vol   | ≈ 0.085 V                      |
+| Input Low Voltage Vil  | ≈ 0.75 V                   |
+| Input High Voltage Vih | ≈ 0.993 V                   |
+| Noise Margin Low NML     | (Vil - Vol) ≈ 0.668 V |
+| Noise Margin High NMH   | (Voh - Vih) ≈ 0.738 V |
 Increasing PMOS width (from previous labs) improves the drive strength of PMOS, slightly increasing the low-to-high switching threshold and modifying noise margins.
 
 ## Observations
