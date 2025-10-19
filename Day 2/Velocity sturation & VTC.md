@@ -33,7 +33,7 @@ setplot dc1
 .end
 ```
 ![Id-Vds Curve](plots/behav_id_vds.jpg)
-"From the above plot we infer that for lower values of Vgs the graph is showing a quadratinv behaviour, and for higher values of Vgs it shows a linear behaviour"
+"From the above plot we infer that for lower values of Vgs the graph is showing a quadratic behaviour, and for higher values of Vgs it shows a linear behaviour"
 ## Netlist – Experiment 2: Id–Vgs Characteristics
 ```spice
 XM1 Vdd n1 0 0 sky130_fd_pr__nfet_01v8 w=0.39 l=0.15
